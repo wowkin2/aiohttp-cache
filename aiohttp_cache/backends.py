@@ -8,7 +8,7 @@ import aiohttp.web
 try:
     import aioredis
 except ImportError:
-    warnings.showwarning("aioredis library not found. Redis cache backend not available")
+    warnings.warn("aioredis library not found. Redis cache backend not available")
 
 
 class BaseCache(object):
